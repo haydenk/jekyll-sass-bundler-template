@@ -1,0 +1,76 @@
+
+$site-header: #a00;
+$site-header-extra: #aaa;
+$black: #000;
+
+.site {
+  font-size: percentage($default-font-size+0.15);
+  text-align: justify;
+  width: 42em;
+  margin: 3em auto 2em;
+  line-height: 1.5em;
+
+  .header {
+    a {
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    h1.title {
+      display: inline-block;
+      margin-bottom: 2em;
+
+      a {
+        color: $site-header;
+      }
+
+      a:hover {
+        color: darken( $site-header, 0.75 );
+      }
+
+      a.extra {
+        color: $site-header-extra;
+        margin-left: 1em;
+      }
+
+      a.extra:hover {
+        color: darken( $site-header-extra, 0.5 );
+      }
+
+    }
+
+  }
+
+  .meta {
+    color: $site-header-extra;
+  }
+
+  .footer {
+    font-size: percentage($default-font-size - 0.1);
+    color: lighten( $black, 0.95 );
+    border-top: 4px solid #eee;
+    margin-top: 2em;
+    overflow: hidden;
+
+    .contact {
+      float: left;
+      margin-right: 3em;
+
+      a {
+        color: #8085C1;
+      }
+    }
+
+    .rss {
+      margin-top: 1.1em;
+      margin-right: -.2em;
+      float: right;
+
+      img {
+        border: 0;
+      }
+    }
+
+  }
+
+}

@@ -1,7 +1,8 @@
 $font-stack:    Helvetica Neue, Helvetica, sans-serif;
-$primary-color: #111;
+$primary-color: #000;
 $background-color: #fbfbfb;
 $link-color: #00a;
+$default-font-size: 1;
 
 /* Global Reset */
 
@@ -10,10 +11,10 @@ $link-color: #00a;
   padding: 0;
 }
 
-html, body { height: 100%; }
+html, body { height: percentage($default-font-size); }
 
 body {
-  font: 100% $font-stack;
+  font: percentage($default-font-size) $font-stack;
   font-size: small;
   color: $primary-color;
   background-color: $background-color;
@@ -21,13 +22,24 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+  font-size: percentage($default-font-size); }
 
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { color: #00a; }
+a         { color: $link-color; }
 a:hover   { color: darken( $link-color, 0.5 ); }
 a:visited { color: lighten( $link-color, 1 ); }
 
+/** Home **/
 @import 'home';
+
+/** Site **/
+@import 'site';
+
+/** Posts **/
+@import 'posts';
+
+/** Syntax Highlighting **/
+@import 'syntax';
+
