@@ -2,10 +2,10 @@
 
 # Set this to the root of your project when deployed:
 http_path = '/'
-css_dir = '_deploy/assets'
+css_dir = '_deploy'
 sass_dir = '_source/_scss'
-images_dir = '_deploy/assets/i'
-javascripts_dir = '_deploy/assets/js'
+images_dir = '_deploy/i'
+javascripts_dir = '_deploy/js'
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
@@ -24,4 +24,3 @@ line_comments = false
 # preferred_syntax = :sass
 # and then run:
 # sass-convert -R --from sass_dir --to css_dir/main.css && rm -rf sass && mv scss sass
-system 'sass-convert -R --from sass_dir --to css_dir/main.css && rm -rf sass && mv scss sass'
