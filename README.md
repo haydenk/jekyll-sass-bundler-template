@@ -8,7 +8,7 @@ simple package management.
 
 1. Clone the repository to whatever directory you want.
 
-** `git clone `git://github.com/haydenk/jekyll-sass-bundler-template.git your-site`
+    * `git clone `git://github.com/haydenk/jekyll-sass-bundler-template.git your-site`
 
 
 2. Run `bundle install` inside the site directory.
@@ -25,9 +25,9 @@ the remote to this project and add your own.
 
 1. Delete remote.
 
-** `git remote remove origin`
+    * `git remote remove origin`
 
 
 2. Add your own remote.
 
-** `git remote add <your git url>`
+    * `git remote add <your git url>`
