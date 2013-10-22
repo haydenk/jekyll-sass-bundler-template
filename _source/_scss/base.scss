@@ -1,0 +1,33 @@
+$font-stack:    Helvetica Neue, Helvetica, sans-serif;
+$primary-color: #000;
+$background-color: #fbfbfb;
+$link-color: #00a;
+
+/* Global Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+  font: 100% $font-stack;
+  font-size: small;
+  color: $primary-color;
+  background-color: $background-color;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+h1 { margin-bottom: 1em; }
+p { margin: 1em 0; }
+
+a         { color: #00a; }
+a:hover   { color: darken( $link-color, 0.5 ); }
+a:visited { color: lighten( $link-color, 1 ); }
+
+@import 'home';

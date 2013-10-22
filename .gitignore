@@ -1,0 +1,4 @@
+.idea/
+_deploy/
+.sass-cache/
+Gemfile.lock

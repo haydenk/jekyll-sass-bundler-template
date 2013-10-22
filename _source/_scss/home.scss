@@ -1,0 +1,19 @@
+/** Home **/
+
+$monospace-font: Monaco, "Courier New", monospace;
+
+ul.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+
+  li {
+    line-height: 1.75em;
+  }
+
+  span {
+    color: #aaa;
+    font-family: $monospace-font;
+    font-size: 80%;
+  }
+}
+
