@@ -1,2 +1,2 @@
-web: bundle exec rackup
-compass: bundle exec rake compass
+web: jekyll serve --watch
+compass: compass watch
